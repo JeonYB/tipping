@@ -1,0 +1,35 @@
+/* Canvas positions */
+.content__inner {
+	grid-area: 1 / 1 / 1 / 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.scene {
+	position: absolute;
+}
+
+.scene--left {
+	width: 100vmin;
+	height: 100vmin;
+	transform: translate3d(-50vmin,0,0);
+}
+
+.scene--full {
+	width: 100%;
+	height: 100vh;
+}
+
+.scene--up {
+	height: 150vmin;
+	width: 150vmin;
+	top: -50vh;
+	left: 50%;
+	margin-left: -75vmin;
+}
+
+.intro-bg .scene {left:0; top:0; z-index: -1;}
