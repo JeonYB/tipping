@@ -31,5 +31,5 @@
 	left: 50%;
 	margin-left: -75vmin;
 }
-
 .intro-bg .scene {left:0; top:0; z-index: -1;}
+#container .content .layer-login {position:absolute; top:310px; left:50%; width:1080px; height:460px; margin-top:-155px; margin-left:-540px; background-color: #fff; }
