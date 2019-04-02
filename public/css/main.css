@@ -31,5 +31,129 @@
 	left: 50%;
 	margin-left: -75vmin;
 }
-.intro-bg .scene {left:0; top:0; z-index: -1;}
-#container .content .layer-login {position:absolute; top:310px; left:50%; width:1080px; height:460px; margin-top:-155px; margin-left:-540px; background-color: #fff; }
+
+.intro-bg .scene {
+	left:0;
+	top:0;
+	z-index:-1;
+}
+.page-intro #container .content .layer-login {
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:1080px;
+	height:460px;
+	margin-top:-230px;
+	margin-left:-540px;
+	background-color:#fff;
+}
+
+.page-intro #container, 
+.page-intro #container .content {
+	height:100%;
+}
+
+.page-intro #footer {
+	position:absolute;
+	top:50%;
+	margin-top:310px;
+	text-align:center;
+	color:#fff;
+}
+
+/* intro-page */
+.layer-login {
+	display:-webkit-flex;
+	display:flex;
+	padding:30px 40px;
+}
+
+.layer-login .section-swiper {
+	position:relative;
+	width:50%;
+	height:100%;
+	-webkit-flex:1;
+	flex:1;
+	padding:40px;
+}
+
+.layer-login .section-swiper .login-swiper {
+	height:100% ;
+}
+
+.layer-login .section-swiper .typo-title {
+	font-size:36px;
+	color:#ff3f00;
+	line-height:120%;
+	word-break:keep-all;
+}
+
+.layer-login .section-swiper .typo-subtitle {
+	font-size:36px;
+	color:#111517;
+	line-height:125%;
+	word-break:keep-all;
+	font-weight:300;
+}
+
+.layer-login .section-swiper .typo-info {
+	margin-top:40px;
+	font-size:18px;
+	color:#111517;
+	word-break:keep-all;
+}
+
+.layer-login .section-swiper .typo-date {
+	display:inline-block;
+	margin-top:6px;
+	font-size:13px;
+	color:rgba(17,21,23,.3);
+	word-break:keep-all;
+}
+
+.layer-login .section-swiper .swiper-pagination {
+	width:auto;
+}
+
+.layer-login .section-swiper .swiper-pagination .swiper-pagination-bullet-active {
+	background-color:#ff3f00;
+}
+
+.layer-login .section-swiper .swiper-pagination .swiper-pagination-bullet {
+	width:6px;
+	height:6px;
+}
+
+.layer-login .section-login {
+	-webkit-flex:1;
+	flex:1;
+	width:50%;
+	padding:40px;
+}
+
+.layer-login .form-login {
+	margin-top:15px;
+	font-weight:300;
+}
+
+.layer-login .section-login .typo-hero {
+	font-size:36px;
+	line-height:54px;
+	font-weight:300;
+}
+
+.layer-login .section-login .form-text {
+	width:100%;
+}
+
+.layer-login .section-login .form-text.uid {
+	border-bottom:0;
+}
+
+.layer-login .section-login .btn-login {
+	margin-top:20px;
+}
+
+.layer-login .section-login .btn-account {
+	margin-top:6px;
+}

@@ -10,6 +10,9 @@
 		<link rel="stylesheet" type="text/css" href="/css/common/common.css" />
 		<link rel="stylesheet" type="text/css" href="/css/common/reset.css" />
 		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="/js/main/main.js"></script>
 	</head>
 	<body>
 		<div id="wrap" class="page-intro">
@@ -23,18 +26,49 @@
 						<li><a href="#none">고객센터</a></li>
 					</ul>
 				</nav>
-				<a class="btn-account"><span>계정신청</span></a>
+				<a class="gnb-other btn-account"><span>계정신청</span></a>
 			</div>
 			<!-- //header -->
 			<!-- container -->
 			<div id="container">
 				<div class="content intro-bg">
 					<div class="layer-login">
-						<div class="swiper">
-							
+						<!-- Slider main container -->
+						<div class="section-swiper">
+							<div class="swiper-container login-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<h4 class="typo-title">티핑제약 <span class="block">고객님</span></h4>
+										<p class="typo-subtitle">티핑인사이트에 오신것을 환영합니다.</p>
+										<p class="typo-info">티핑인사이트 공식 포털서비스 오픈</p>
+										<span class="typo-date">2019.03.20</span>
+									</div>
+									<div class="swiper-slide">
+										<h4 class="typo-title">티핑제약 <span class="block">고객님</span></h4>
+										<p class="typo-subtitle">티핑인사이트에 오신것을 환영합니다.</p>
+										<p class="typo-info">티핑인사이트 공식 포털서비스 오픈</p>
+										<span class="typo-date">2019.03.20</span>
+									</div>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+							</div>
 						</div>
 						<div class="section-login">
-							
+							<h4 class="typo-hero">로그인</h4>
+							<form action="" id="form-login" class="form-login">
+								<fieldset>
+									<legend>Login</legend>
+									<div class="item">
+										<label for="uid" class="blind">ID</label><input name="" type="text" value="" id="uid" class="form-text uid" placeholder="아이디"">
+									</div>
+									<div class="item">
+										<label for="upw" class="blind">PASSWORD</label><input name="" type="password" value="" id="upw" class="form-text upw" placeholder="패스워드">
+									</div>
+									<button name="" type="submit" class="btn-login btn-main"><span>로그인</span></button>
+									<a href="#none" class="btn-account btn-default"><span>계정신청</span></a>
+								</fieldset>
+							</form>
 						</div>
 					</div>
 					<canvas class="scene scene--full" id="scene"></canvas>
@@ -47,7 +81,6 @@
 			</div>
 			<!-- //footer -->
 		</div>
-		
 		<script type="x-shader/x-vertex" id="wrapVertexShader">
 			attribute float size;
 			attribute vec3 color;
@@ -69,7 +102,7 @@
 				gl_FragColor = color;
 			}
 		</script>
-		<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@1"></script><!-- intro.js IE support -->
+		<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@1"></script><!-- intro.js IE support cdn -->
 		<script>/* intro.js IE support */
 		cssVars({
 			onlyVars: true,
@@ -79,6 +112,7 @@
 			}
 		});
 		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script><!-- swiper cdn -->
 		<script src="js/main/three.min.js"></script>
 		<script src="js/main/TweenMax.min.js"></script>
 		<script src="js/main/introBg.js"></script>
