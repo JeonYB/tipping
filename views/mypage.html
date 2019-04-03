@@ -54,12 +54,11 @@
 									</div>
 								</th>
 							</tr>
-							<tr>
+							<tr class="row_disabled">
 								<th scope="row"><label for="uid">아이디</label></th>
 								<td>
 									<div class="item">
-										<input name="" type="text" value="" id="uid" class="form-text" placeholder="아이디를 입력하세요.""> 
-										<span class="alt-text on">숨겨두지 않은 설명 입니다. 줄 바꿈 없습니다.</span>
+										<input name="" type="text" value="jjley" id="uid" class="form-text" disabled>  
 									</div>
 								</td>
 							</tr>
@@ -67,17 +66,51 @@
 								<th scope="row"><label for="upw">비밀번호</label></th>
 								<td>
 									<div class="item">
-										<input name="" type="text" value="" id="upw" class="form-text" placeholder="영문, 숫자, 특수문자를 조합하여 10자 이상 적어주세요.""> 
-										<span class="alt-text on">영문, 숫자, 특수문자를 조합하여 10자 이상 적어주세요.</span>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="upwc">비밀번호 확인</label></th>
-								<td>
-									<div class="item">
-										<input name="" type="text" value="" id="upwc" class="form-text" placeholder="비밀번호를 한 번 더 입력하세요.""> 
-										<span class="alt-text on">동일한 비밀번호가 아닙니다.</span>
+										<a href="#none" class="layerpopup-button pw-modify">비밀번호 변경</a>
+										<!-- section-layer -->
+										<div class="section-layer">
+											<div class="content-layer">
+												<h5 class="content-hedline">비밀번호 변경</h5>
+												<a href="#none" class="close-button"><span class="blind">팝업 닫기</span></a>
+												<div class="tbl-form">
+													<form action="" method="post">
+													<fieldset>
+														<legend>Legend</legend>
+														<table cellspacing="0" summary="표의 요약을 반드시 넣어 주세요">
+														<col width="220">
+														<col width="*">
+														<tbody>
+														<tr>
+															<th scope="row"><label for="uid">현재 비밀번호</label></th>
+															<td>
+																<div class="item">
+																	<input name="" type="text" value="" id="uid" class="form-text" placeholder="현재 비밀번호를 입력하세요.">
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row"><label for="uid">신규 비밀번호</label></th>
+															<td>
+																<div class="item">
+																	<input name="" type="text" value="" id="uid" class="form-text" placeholder="새로운 비밀번호를 입력하세요.">
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row"><label for="uid">신규 비밀번호 확인</label></th>
+															<td>
+																<div class="item">
+																	<input name="" type="text" value="" id="uid" class="form-text" placeholder="새로운 비밀번호를 한번 더 입력하세요.">
+																</div>
+															</td>
+														</tr>
+														</tbody>
+														</table>
+													</fieldset>
+													</form>
+												</div>
+											</div>
+										</div><!-- //section-layer -->
 									</div>
 								</td>
 							</tr>
@@ -85,8 +118,7 @@
 								<th scope="row"><label for="uname">사용자 이름</label></th>
 								<td>
 									<div class="item">
-										<input name="" type="text" value="" id="uname" class="form-text" placeholder="이름을 입력하세요.""> 
-										<span class="alt-text on">사용자 이름을 정확하게 입력해주세요.</span></span>
+										<input name="" type="text" value="정나영" id="uname" class="form-text" placeholder="이름을 입력하세요.""> 
 									</div>
 								</td>
 							</tr>
@@ -94,8 +126,7 @@
 								<th scope="row"><label for="ucp">부서</label></th>
 								<td>
 									<div class="item">
-										<input name="" type="text" value="" id="ucp" class="form-text" placeholder="부서명을 입력하세요.""> 
-										<span class="alt-text on">부서명을 정확하게 입력해주세요.</span>
+										<input name="" type="text" value="디자인팀" id="ucp" class="form-text" placeholder="부서명을 입력하세요.""> 
 									</div>
 								</td>
 							</tr>
@@ -103,8 +134,7 @@
 								<th scope="row"><label for="unum">연락처</label></th>
 								<td>
 									<div class="item">
-										<input name="" type="text" value="" id="unum" class="form-text" placeholder="- 없이 번호만 입력하세요.""> 
-										<span class="alt-text on">연락처를 확인해주세요.</span>
+										<input name="" type="text" value="01012345678" id="unum" class="form-text" placeholder="- 없이 번호만 입력하세요.""> 
 									</div>
 								</td>
 							</tr>
@@ -112,8 +142,7 @@
 								<th scope="row"><label for="uem">이메일</label></th>
 								<td>
 									<div class="item">
-										<input name="" type="text" value="" id="uem" class="form-text" placeholder="이메일을 입력하세요.""> 
-										<span class="alt-text on">이미 사용 중인 이메일입니다.</span>
+										<input name="" type="text" value="jly9518@gmail.com" id="uem" class="form-text" placeholder="이메일을 입력하세요.""> 
 									</div>
 								</td>
 							</tr>
@@ -121,21 +150,10 @@
 							</table>
 						</fieldset>
 						</form>
-						<div class="section-agreement">
-							<div class="chk_agr">
-								<p><input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>개인정보 수집 및 이용 동의</label></p>
-							</div>
-							<div class="content-agreement">
-								<strong>티핑인사이트개인정보처리방침</strong>
-								<p>티핑인사이트(이하 ‘티핑인사이트’ 또는 회사’)는 서비스 기획부터 종료까지 정보통신망 이용촉진 및 정보보호 등에 관한 법률(이하 ‘정보통신망법’), 개인정보보호법 등 국내의 개인정보 보호 법령을 철저히 준수합니다. 또한 OECD의 개인정보 보호 가이드라인 등 국제 기준을 준수하여 서비스를 제공합니다.</p>
-								<strong>1. 개인정보처리방침의 의의</strong>
-								<p>회사는 본 개인정보처리방침을 정보통신망법을 기준으로 작성하되, 회사 내에서의 이용자 개인정보 처리 현황을 최대한 알기 쉽고</p>
-							</div>
-						</div>
 
 						<div class="section-button">
 							<a href="#none" class="btn-account btn-cencle"><span>취소</span></a>
-							<button name="" type="submit" class="btn-account btn-main"><span>계정신청</span></button>
+							<button name="" type="submit" class="btn-account btn-main"><span>수정하기</span></button>
 						</div>
 					</div><!-- tbl-form//  -->
 				</div>
