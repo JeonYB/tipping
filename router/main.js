@@ -14,4 +14,9 @@ module.exports = function(app)
    app.get('/mypage',function(req,res){
       res.render('mypage.html')
    });
+
+   /*  정밀분석 메인 */
+   app.get('/analysis',function(req,res){
+      res.render('analysis.html')
+   });
 }

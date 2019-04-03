@@ -7,9 +7,10 @@ html,body {height:100%;}
 #header{overflow:hidden; position:fixed; width:100%; min-width:1080px; height:80px; color:#fff; z-index: 1;;}
 #header::after {content:'';clear:both;display:block;position:relative; top:-1px; border-bottom:1px solid #fff; opacity:.2;}
 #container{width:100%;display:block;}
+#container .page-content,
 #container::after{content:'';display:block;clear:both;}
 #container .content {position: relative;}
-#container .page-content {overflow:hidden; width:940px; margin:auto;}
+#container .page-content {width:940px; margin:auto;}
 #footer{position:relative; width:100%; font-size: 12px;}
 
 #header a {color:#fff; cursor: pointer}
@@ -41,7 +42,7 @@ html,body {height:100%;}
 .btn-default {display:inline-block; width:100%; background-color:#000; text-align: center; color:#fff; font-size:18px; line-height: 56px;}
 .section-headline {width:100%; height:210px; background: url(/images/common/sub_bg.png) no-repeat center top;}
 .container-headline {width:940px; margin:auto; padding-top:118px; font-size:36px; color:#fff; font-weight: 300;}
-.content-hedline {margin:60px 0 20px; font-size:18px; color:#111517; font-weight: 300;}
+.content-headline {margin:60px 0 20px; font-size:18px; color:#111517; font-weight: 300;}
 
 input[type="checkbox"] {display:none;}
 input[type="checkbox"] + label {display:inline-block;line-height: 24px;}
@@ -79,14 +80,32 @@ input[type="checkbox"]:checked + label span {background:url(/images/common/inp_c
 
 .layerpopup-button {}
 
-.section-layer {display:none; position:absolute;top:50%;left:50%;transform:translate(-50%, -50%); padding:60px 40px; background-color:#fff;}
-.section-layer.on {display:block;}
+.wrap-layer {display:none;}
+.wrap-layer.on {display:block;}
+.section-layer {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%); padding:20px 40px; background-color:#fff; z-index:999;}
 .pw-modify {}
 .section-layer .close-button { position: absolute;right: 25px;top: 25px;width: 25px;height: 25px;opacity: 0.3;}
 .section-layer .close-button:hover {opacity: 1;}
-.section-layer .close-button:before, .section-layer .close-button:after {position: absolute;left: 15px;content: ' ';height: 25px;width: 2px;background-color: #333;}
-.section-layer .close-button:before {transform: rotate(45deg);}
-.section-layer .close-button:after {transform: rotate(-45deg);}
+.section-layer .close-button::before, .section-layer .close-button:after {position: absolute;left: 15px;content: ' ';height: 25px;width: 2px;background-color: #333;}
+.section-layer .close-button::before {transform: rotate(45deg);}
+.section-layer .close-button::after {transform: rotate(-45deg);}
 .section-layer .content-layer {width:880px;}
-.section-layer .content-hedline {margin:0 0 20px; font-size:18px; }
-.dim-layer {background-color:#000; opacity: .2;}
+.section-layer .content-headline {margin:40px 0 20px; font-size:18px; }
+.dim-layer {position: fixed;left:0;right:0;top:0;bottom:0; width:100%; height:100%; background-color:#000; opacity: .2;}
+
+.nav {position:absolute; left:0; top:0; width:220px; }
+.nav .content-headline {margin:0; padding:60px 0 10px; border-bottom: 2px solid #000; line-height:30px; }
+.nav .sub-headline {margin-top:20px; font-size:14px; font-weight: bold; line-height: 24px; }
+.nav .wrap-menu {margin-top:8px;}
+.nav .wrap-menu .menu {position:relative; margin-top:10px; padding-left:35px; font-size:12px;  line-height: 24px; }
+.nav .wrap-menu .menu a::before {content:''; display:inline-block; position: absolute;left:0; top:0; width:24px; height:24px; background:url(/images/common/icon_folder_off.png) left top no-repeat;}
+.nav .wrap-menu .menu.on {color:#ff3f00; font-weight: bold;}
+.nav .wrap-menu .menu.on a::before {background-image:url(/images/common/icon_folder_on.png)}
+
+.article .wrap-scrum  {margin:0; padding:60px 0 10px; border-bottom: 2px solid #000; line-height:30px; }
+.article {min-height:400px; margin-left:240px; width:700px;}
+.article .wrap-scrum::after{content:'';display:block;clear:both;} 
+.article .wrap-scrum a {display: inline-block; float:left; }
+.article .wrap-scrum a::before {content:'>'; color: #000; font-weight: normal; padding:0 6px;}
+.article .wrap-scrum a:first-child::before {display: none;}
+.article .wrap-scrum a.on {color:#ff3f00; font-weight: bold;}
