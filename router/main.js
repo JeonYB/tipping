@@ -19,4 +19,9 @@ module.exports = function(app)
    app.get('/analysis',function(req,res){
       res.render('analysis.html')
    });
+
+   /*  정밀분석 depth2 */
+   app.get('/analysis_list',function(req,res){
+      res.render('analysis_list.html')
+   });
 }
