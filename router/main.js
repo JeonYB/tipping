@@ -24,4 +24,15 @@ module.exports = function(app)
    app.get('/analysis_list',function(req,res){
       res.render('analysis_list.html')
    });
+
+   /*  정밀분석  Spotfire iFrame*/
+   app.get('/spotfire',function(req,res){
+      res.render('spotfire.html')
+   });
+
+   /*  정밀분석  Spotfire iFrame*/
+   app.get('/information',function(req,res){
+      res.render('information.html')
+   });
+
 }

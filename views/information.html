@@ -20,9 +20,9 @@
 				<h1><a href="#none" class="logo"><span class="blind">TippingInsight</span></a></h1>
 				<nav>
 					<ul class="gnb">
-						<li class="on"><a href="#none">TIPin</a></li>
+						<li><a href="#none">TIPin</a></li>
 						<li class="on"><a href="#none">정보사항</a></li>
-						<li class="on"><a href="#none">고객센터</a></li>
+						<li><a href="#none">고객센터</a></li>
 					</ul>
 				</nav>
 				<a class="gnb-other btn-account"><span>계정신청</span></a>
@@ -31,37 +31,30 @@
 			<!-- container -->
 			<div id="container">
 				<div class="section-headline">
-					<h3 class="container-headline">TIPin 정밀분석</h3>
+					<h3 class="container-headline">정보사항</h3>
+				</div>
+				<div class="section-tab">
+					<div class="wrap-tab">	
+						<div class="tab"><a href="">사용방법</a></div>
+						<div class="tab on"><a href="">관련기사</a></div>
+					</div>
 				</div>
 				<div class="content page-content">
-					<div class="nav">
-						<h4 class="content-headline">탐색트리</h4>
-						<h5 class="sub-headline">TIPin</h5>
-						<ul class="wrap-menu">
-							<li class="menu on"><a href="#none">녹십자</a></li>
-							<li class="menu"><a href="#none">대웅제약</a></li>
-							<li class="menu"><a href="#none">한미약품</a></li>
-							<li class="menu"><a href="#none">제일약품</a></li>
-							<li class="menu"><a href="#none">일동제약</a></li>
-						</ul>
+					<div class="container-tab">
+						아직 내용을 전달 받지 못했음
 					</div>
-					<!-- article -->
-					<div class="article">
-						<div class="wrap-scrum">
-							<a href="#">TIPin</a>
-							<a href="#" class="on">녹십자</a>
+					<div class="container-tab on">
+						<div class="wrap-list">
+							<div class="items">
+								<div class="photo-thumb"><img src="./images/common/default.png" alt="" /></div>
+								<div class="panel-news">
+									<div class="news-group">티핑인사이트<span class="date">2019. 03. 23</span></div>
+									<h6 class="news-headline">[이영작의 신약이야기] “빅데이터로 분석한 알츠하이머 치매 의료시장”</h6>
+									<p class="news-info">부비동염수술과 천식사이의 관련성에 대한. 고찰과 분석을 위한 방법론. 서울대 위한 방법론. 서울대</p>\
+								</div>
+							</div>
 						</div>
-						<div class="section-analysis">
-							<ul class="wrap-analysis depth-tipin">
-								<li class="items"><a href="#none"><strong>녹십자</strong></a></li>
-								<li class="items active"><a href="#none"><strong>녹십자</strong></a></li>
-								<li class="items"><a href="#none"><strong>녹십자</strong></a></li>
-								<li class="items"><a href="#none"><strong>녹십자</strong></a></li>
-								<li class="items"><a href="#none"><strong>녹십자</strong></a></li>
-							</ul>
-						</div>
-						
-					</div><!-- //article -->
+					</div>
 				</div>
 			</div>
 			<!-- //container -->
@@ -77,5 +70,11 @@
 			</div>
 			<!-- //footer -->
 		</div>		
+		<script>
+		$('.wrap-list').masonry({
+			itemSelector: '.items',
+			gutter: 20,
+		});
+		</script>
 	</body>
 </html>

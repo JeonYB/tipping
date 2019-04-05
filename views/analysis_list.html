@@ -11,6 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="/css/common/reset.css" />
 		<link rel="stylesheet" type="text/css" href="/css/main.css" />
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<script src="/js/common/common.js"></script>
 	</head>
 	<body>
@@ -20,9 +22,9 @@
 				<h1><a href="#none" class="logo"><span class="blind">TippingInsight</span></a></h1>
 				<nav>
 					<ul class="gnb">
-						<li><a href="#none">TIPin</a></li>
-						<li><a href="#none">정보사항</a></li>
-						<li><a href="#none">고객센터</a></li>
+						<li class="on"><a href="#none">TIPin</a></li>
+						<li class="on"><a href="#none">정보사항</a></li>
+						<li class="on"><a href="#none">고객센터</a></li>
 					</ul>
 				</nav>
 				<a class="gnb-other btn-account"><span>계정신청</span></a>
@@ -52,38 +54,65 @@
 							<a href="#" class="on">녹십자</a>
 						</div>
 						<div class="section-analysis">
-							<ul class="wrap-analysis depth-tipin">
+							<ul class="wrap-analysis detail-tipin">
 								<li class="items">
-									<div class="content-analysis">
-										<div class="photo-thumb"><img src="" alt="" /></div>
-										<h6 class="prd-headline"></h6>
-										<p class="prd-info"></p>
-										<span class="prd-date"></span>
-									</div>
+									<a href="#none">
+										<div class="content-analysis">
+											<div class="photo-thumb"><img src="./images/common/default.png" alt="" /></div>
+											<h6 class="prd-headline">[CKD-1] 암환자·폐렴 가장 빈번하게 발생하는 감염 발생하는 감염</h6>
+											<p class="prd-info">질병분류코드 C 코드. 신생물(C00-D48). 상병기호</p>
+											<span class="prd-date">2018. 03. 25 오후 8:17</span>
+										</div>
+									</a>
 								</li>
 								<li class="items">
-									<div class="content-analysis">
-										<div class="photo-thumb"><img src="" alt="" /></div>
-										<h6 class="prd-headline"></h6>
-										<p class="prd-info"></p>
-										<span class="prd-date"></span>
-									</div>
+									<a href="#none">
+										<div class="content-analysis">
+											<div class="photo-thumb"><img src="./images/common/default.png" alt="" /></div>
+											<h6 class="prd-headline">번하게 발생하는 감염 발생하는 감염</h6>
+											<p class="prd-info">질병분류코드 상병기호</p>
+											<span class="prd-date">2018. 03. 25 오후 8:17</span>
+										</div>
+									</a>
 								</li>
 								<li class="items">
-									<div class="content-analysis">
-										<div class="photo-thumb"><img src="" alt="" /></div>
-										<h6 class="prd-headline"></h6>
-										<p class="prd-info"></p>
-										<span class="prd-date"></span>
-									</div>
+									<a href="#none">
+										<div class="content-analysis">
+											<div class="photo-thumb"><img src="./images/common/default.png" alt="" /></div>
+											<h6 class="prd-headline">[CKD-1] 암환자·폐렴 가장 빈번하게  감염</h6>
+											<p class="prd-info">질병분류코드 C 코드. 신생물(C00-D48). 상병기호</p>
+											<span class="prd-date">2018. 03. 25 오후 8:17</span>
+										</div>
+									</a>
 								</li>
 								<li class="items">
-									<div class="content-analysis">
-										<div class="photo-thumb"><img src="" alt="" /></div>
-										<h6 class="prd-headline"></h6>
-										<p class="prd-info"></p>
-										<span class="prd-date"></span>
-									</div>
+									<a href="#none">
+										<div class="content-analysis">
+											<div class="photo-thumb"><img src="./images/common/default.png" alt="" /></div>
+											<h6 class="prd-headline">[CKD-1] 암환자·폐렴 가장 빈번하게 발생하는 감염 발생하는 감염</h6>
+											<span class="prd-date">2018. 03. 25 오후 8:17</span>
+										</div>
+									</a>
+								</li>
+								<li class="items">
+									<a href="#none">
+										<div class="content-analysis">
+											<div class="photo-thumb"><img src="./images/common/default.png" alt="" /></div>
+											<h6 class="prd-headline">번하게 발생하는 감염 발생하는 감염</h6>
+											<p class="prd-info">질병분류코드 상병기호</p>
+											<span class="prd-date">2018. 03. 25 오후 8:17</span>
+										</div>
+									</a>
+								</li>
+								<li class="items">
+									<a href="#none">
+										<div class="content-analysis">
+											<div class="photo-thumb"><img src="./images/common/default.png" alt="" /></div>
+											<h6 class="prd-headline">[CKD-1] 암환자·폐렴 가장 빈번하게  감염</h6>
+											<p class="prd-info">질병분류코드 C 코드. 신생물(C00-D48). 상병기호</p>
+											<span class="prd-date">2018. 03. 25 오후 8:17</span>
+										</div>
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -104,5 +133,11 @@
 			</div>
 			<!-- //footer -->
 		</div>		
+		<script>
+		$('.detail-tipin').masonry({
+			itemSelector: '.items',
+			gutter: 20,
+		});
+		</script>
 	</body>
 </html>
