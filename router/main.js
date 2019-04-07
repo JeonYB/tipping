@@ -30,9 +30,14 @@ module.exports = function(app)
       res.render('spotfire.html')
    });
 
-   /*  정밀분석  Spotfire iFrame*/
+   /*  정보사항 */
    app.get('/information',function(req,res){
       res.render('information.html')
+   });
+
+   /* 일반_고객센터 */
+   app.get('/customer',function(req,res){
+      res.render('customer.html')
    });
 
 }

@@ -22,7 +22,7 @@ html,body {height:100%;}
 #header .gnb-other {float:right; }
 #header .btn-account {display: inline-block;width:100px; height:40px; margin:20px 40px; border:1px solid #d9d9d9; font-size:13px; text-align: center; line-height: 40px;}
 .gnb-block #header,
-#header.change {background-color: #fff;}\
+#header.change {background-color: #fff;}
 .gnb-block #header::after,
 #header.change::after {border-color: #111517;}
 .gnb-block #header a,
@@ -43,8 +43,13 @@ html,body {height:100%;}
 .form-text {padding:18px 20px;height: 56px;border: 1px solid #d9d9d9;}
 .layer-login .section-login .btn-login {width:100%; background-color:#ff3f00; text-align: center; color:#fff; font-size:18px; line-height: 56px;}
 .layer-login .section-login .btn-account {display:inline-block; width:100%; background-color:#000; text-align: center; color:#fff; font-size:18px; line-height: 56px;}
+.wrap-btn {margin:40px 0 20px; text-align: center; }
 .btn-main {width:100%; background-color:#ff3f00; text-align: center; color:#fff; font-size:18px; line-height: 56px;}
 .btn-default {display:inline-block; width:100%; background-color:#000; text-align: center; color:#fff; font-size:18px; line-height: 56px;}
+.btn-basic {display:inline-block; width:140px; height: 48px; line-height: 48px; font-size:16px; border:solid 1px rgba(0, 0, 0, 0.1); text-align: center;}
+.btn-str {display:inline-block; padding:0 20px;border: solid 1px #007694;line-height: 40px; font-size:14px;  color: #007694; }
+.fr {float: right;}
+.fr::after {content: ""; display:block; clear: both; width:100%;}
 .section-headline {width:100%; height:210px; background: url(/images/common/sub_bg.png) no-repeat center top;}
 .container-headline {width:940px; margin:auto; padding-top:118px; font-size:36px; color:#fff; font-weight: 300;}
 .content-headline {margin:60px 0 20px; font-size:18px; color:#111517; font-weight: 300;}
@@ -136,7 +141,6 @@ input[type="checkbox"]:checked + label span {background:url(/images/common/inp_c
 .wrap-analysis.detail-tipin .prd-date {font-size:12px; color: rgba(17, 21, 23, 0.3); margin-top:15px; }
 .section-spotfire {width:100%; min-height:600px; background-color: #f1f1f1}
 
-
 .section-tab {background-color: #111517; }
 .section-tab .wrap-tab {display: flex;width:940px; margin: auto; }
 .section-tab .wrap-tab .tab {flex:1; background-color: #1d2123; line-height: 56px; text-align: center; font-size: 16px;}
@@ -144,14 +148,76 @@ input[type="checkbox"]:checked + label span {background:url(/images/common/inp_c
 .section-tab .wrap-tab .tab a {display: inline-block; width: 100%; height: 100%; color:#fff;  }
 .section-tab .wrap-tab .tab.on a {color:#111517;  }
 
-.container-tab {display: none}
+.container-tab {display: none; margin-top:60px; }
 .container-tab.on {display: block}
-.wrap-list {;}
-.wrap-list .items {;}
-.wrap-list .items .photo-thumb {;}
-.wrap-list .items .photo-thumb img {;}
-.wrap-list .items .panel-news {;}
-.wrap-list .items .panel-news .news-group {;}
-.wrap-list .items .panel-news .news-group .date {;}
-.wrap-list .items .panel-news .news-headline {;}
-.wrap-list .items .panel-news .news-info {;}
+.wrap-list {padding-bottom: 50px; }
+.wrap-list .items {float:left; width: 300px; margin-bottom:20px; padding:0 20px 20px; border:1px solid #d9d9d9 ; border-collapse: collapse;}
+.wrap-list .items .wrap-news {position: relative; padding-bottom:100px;}
+.wrap-list .items .photo-thumb {margin:0 -20px; padding-top: 62px;}
+.wrap-list .items .photo-thumb img {width:100%; margin-top:-62px;}
+.wrap-list .items .panel-news {position:absolute; bottom:0; width:260px; height:142px; padding:13px;  background-color:#fff; }
+.wrap-list .items .panel-news .news-group {font-size:11px; color:#007694; }
+.wrap-list .items .panel-news .news-group .date {color: rgba(17, 21, 23, 0.3);}
+.wrap-list .items .panel-news .news-group .date::before {content:""; display:inline-block; margin:0 11px;width:1px; height:8px; background-color: #d9d9d9;}
+.wrap-list .items .panel-news .news-headline {margin-top:10px; font-size:14px; font-weight:bold; color:#000;display:inline-block; display: -webkit-box;overflow: hidden;height:40px; line-height:144%; white-space: normal;word-wrap: break-word;-webkit-line-clamp: 2;-webkit-box-orient: vertical;text-overflow: ellipsis;}
+.wrap-list .items .panel-news .news-info {overflow:hidden; margin-top:15px; font-size: 12px; color: rgba(17, 21, 23, 0.5);display:inline-block;display: -webkit-box;height:35px; line-height:144%; font-weight:normal; white-space: normal;word-wrap: break-word;-webkit-line-clamp: 2;-webkit-box-orient: vertical;text-overflow: ellipsis;}
+
+.wrap-spin {position: absolute; bottom: 0; width: 100%; }
+.spin { width:24px; height:24px; margin: auto;background:url(/images/common/icon_loading.png) left top no-repeat; -webkit-animation-name: spin;-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: infinite;-webkit-animation-timing-function: linear;}
+
+@-webkit-keyframes spin {
+  from   {  -webkit-transform: rotate(0deg); }
+  to   {  -webkit-transform: rotate(360deg); }
+}
+
+/* 공지사항 LISR */
+.tbl-type,.tbl-type th,.tbl-type td{border:0;text-align:left;}
+.tbl-type{width:100%;border-top:2px solid #000; border-bottom:1px solid #ddd;color:#111517; font-size: 12px; }
+.tbl-type caption{display:none}
+.tbl-type th thead {}
+.tbl-type th {height:42px; border-top:1px solid #ddd; background-color:#f7f7f7;font-size:12px;font-weight:normal;}
+.tbl-type td {height:56px; border-top:1px solid #ddd;}
+.tbl-type .import {display:inline-block; width: 48px;border-radius: 2px;background-color: #ff3f00; line-height: 24px; text-align:center; color:#fff; font-weight: bold;}
+.tbl-type .num {font-size: 12px; color: #344597; }
+.tbl-type .title {font-size: 14px; font-weight: bold;}
+.tbl-type .date {font-size:12px; color:rgba(17, 21, 23, 0.3);}
+.tbl-type .answer {display:none; background-color:#f7f7f7; font-size:14px; }
+.tbl-type .answer.on {display:table-row;}
+.tbl-type .answer td {padding: 40px; }
+
+/* 공지사항 VIEW */
+.tbl-view th {background-color:#fff}
+.tbl-view td {color: rgba(17, 21, 23, 0.5); font-size: 14px;}
+.tbl-view .tit {font-weight: bold;color:#111517;}
+.tbl-view .cont {padding:40px 0; color:#111517;}
+.tbl-view .import {margin-right: 8px;}
+.tbl-view .next td {color:#000;}
+
+/**/
+.tbl-faq tr {position: relative;}
+
+.tbl-faq .question .title {position: relative;}
+.tbl-faq .question .title::after {content: ""; display: inline-block; position: absolute;right:0; width: 16px;height: 16px; background:url(/images/common/icon_open.png) 50% 50% no-repeat; background-size: 16px; }
+.tbl-faq .question.on .title::after {-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+
+.wrap-sort { margin-bottom:20px; padding-bottom:6px; }
+.wrap-sort a {display: inline-block; margin-right: 35px;font-size: 18px; color:#111517;  vertical-align: top;}
+.wrap-sort a.on {color:#007694;}
+.wrap-sort a.on::after {content:""; width:100%; display:inline-block; border-bottom:2px solid #007694; }
+.paginate{padding:40px 0 20px;text-align:center}
+.paginate a,.paginate strong{display:inline-block;position:relative;width:32px; height:32px; font-size:14px; vertical-align: top; line-height:32px; text-align: center; }
+.paginate strong{background-color: #111517; color: #fff; font-weight: normal; }
+.paginate a:hover{opacity: .6;}
+.paginate a.pre{-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);transform: rotate(180deg);background:url(/images/common/page_next.png) 50% 50% no-repeat; background-size:8px 13px ;}
+.paginate a.pre-end{-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);transform: rotate(180deg);background:url(/images/common/page_end.png) 50% 50% no-repeat;  background-size:8px 13px ;}
+.paginate a.next{background:url(/images/common/page_next.png) 50% 50% no-repeat;  background-size:8px 13px ;}
+.paginate a.next-end{background:url(/images/common/page_end.png) 50% 50% no-repeat; background-size:8px 13px ;}
+
+
+
+/*admin*/
+.control-admin {margin-bottom:40px; font-size: 14px; line-height:42px; }
+
+.control-admin .remove::before {content: ''; display: inline-block; width: 1px; height: 12px; margin:0 12px; background-color:rgba(17, 21, 23, 0.3); }
+.select-news {position: absolute; left:-10px; top:10px; z-index:1; }
+.select-news input {vertical-align: top}

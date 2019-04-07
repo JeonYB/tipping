@@ -29,8 +29,36 @@
     }
   };
 
+  tabFunc = function() {
+    var tabBtn = $('.section-tab').find('.tab');
+    var tabContainer = $('.content').find('.container-tab');
+
+    tabBtn.each(function(i, n){
+      tabBtn.eq(i).click(function(e){
+        e.preventDefault();
+        tabBtn.removeClass('on').eq(i).addClass('on'); 
+        tabContainer.removeClass('on').eq(i).addClass('on');
+      })
+    })
+  }
+
+  faqFunc = function() {
+    var question = $('.tbl-type').find('.question'); 
+    var answer = $('.tbl-type').find('.answer');
+  
+    question.each(function(i, n){
+      question.eq(i).click(function(e){
+        e.preventDefault();
+        question.removeClass('on').eq(i).addClass('on'); 
+        answer.removeClass('on').eq(i).addClass('on');
+      })
+    })
+  }
+
   $(document).ready(function() {
     headerScroll();
-    layerPopup()
+    layerPopup();
+    tabFunc();
+    faqFunc();
   });
 })(jQuery);
