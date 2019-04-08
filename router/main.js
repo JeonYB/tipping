@@ -35,14 +35,19 @@ module.exports = function(app)
       res.render('information.html')
    });
 
-   /*  정보사항 - 관련기사 등록 */
+   /* 일반_고객센터 */
+   app.get('/customer',function(req,res){
+      res.render('customer.html')
+   });
+
+   /*  관리자_관련기사 등록 */
    app.get('/information_write',function(req,res){
       res.render('information_write.html')
    });
 
-   /* 일반_고객센터 */
-   app.get('/customer',function(req,res){
-      res.render('customer.html')
+   /* 관리자_고객센터 */
+   app.get('/customer_write',function(req,res){
+      res.render('customer_write.html')
    });
 
 }
