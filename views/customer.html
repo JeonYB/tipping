@@ -41,9 +41,13 @@
 						<div class="tab"><a href="">문의처 정보</a></div>
 					</div>
 				</div>
-				<div class="content page-content">
+				<div class="content page-content login-admin">
 					<!-- 공지사항 // -->
 					<div class="container-tab on">
+						<div class="control-admin chk_agr if-admin">
+							<input type="checkbox" id="c4" name="cc" /><label for="c4"><span></span>전체선택</label> <a href="#none" role="button" class="remove">선택삭제</a>
+							<a class="btn-str fr">공지사항 등록</a>	
+						</div>
 						<div class="wrap-sort">
 							<a href="#" class="on">전체</a>
 							<a href="#">공지사항</a>
@@ -52,36 +56,40 @@
 						<!-- 공지사항 리스트// -->
 						<table cellspacing="0" border="1" summary="" class="tbl-type">
 						<caption>공지사항</caption>
-						<colgroup>
-						<col width="80px"><col width="120px"><col width="*">
-						<col width="12%">
-						</colgroup>
 						<thead>
 						<tr>
+						<th scope="col" class="tbl-admin">선택</th>	
 						<th scope="col">번호</th>
 						<th scope="col">분류</th>
 						<th scope="col">제목</th>
 						<th scope="col">작성일</th>
+						<th scope="col" class="tbl-admin">조회수</th>
 						</tr>
 						</thead>
 						<tbody>
 						<tr>
-						<td class="num">5189</td>
-						<td><strong class="import">공지</strong></td>
-						<td class="title">포털 홈페이지 오픈</td>
-						<td class="date">2019. 03. 24</td>
+						<td class="tbl-admin chk_agr tbl-wid-60"><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span></label></td>	
+						<td class="num tbl-wid-80">5189</td>
+						<td class="tbl-wid-120"><strong class="import">공지</strong></td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-580">포털 홈페이지 오픈</div></td>
+						<td class="date tbl-wid-120">2019. 03. 24</td>
+						<td class="count tbl-admin tbl-wid-80">125</td>
 						</tr>
 						<tr>
+						<td class="tbl-admin chk_agr"><input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span></label></td>	
 						<td class="num">5189</td>
 						<td>공지사항</td>
-						<td class="title">포털 홈페이지 오픈</td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-580">포털 홈페이지 오픈</div></td>
 						<td class="date">2019. 03. 24</td>
+						<td class="count tbl-admin">125</td>
 						</tr>
 						<tr>
+						<td class="tbl-admin chk_agr"><input type="checkbox" id="c3" name="cc" /><label for="c3"><span></span></label></td>	
 						<td class="num">5189</td>
 						<td>공지사항</td>
-						<td class="title">포털 홈페이지 오픈</td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-580">포털 홈페이지 오픈</div></td>
 						<td class="date">2019. 03. 24</td>
+						<td class="count tbl-admin">125</td>
 						</tr>
 						</tbody>
 						</table><!-- //공지사항 리스트 -->
@@ -111,7 +119,7 @@
 						<thead>
 						<tr>
 						<th scope="row">제목</th>
-						<td colspan="5" class="tit"><strong class="import">공지</strong>포털 홈페이지 오픈</td>
+						<td colspan="5" class="tit"><div class="tbl-headcopy tbl-wid-860"><strong class="import">공지</strong>포털 홈페이지 오픈</div></td>
 						</tr>
 						</thead>
 						<tbody>
@@ -119,7 +127,7 @@
 						<th scope="row">분류</th>
 						<td colspan="2">공지사항</td>
 						<th scope="row">일시</th>
-						<td colspan="2">2019. 03. 24</td>
+						<td colspan="2">2019. 03. 24<div class="ib-admin count"><strong>조회수</strong>1,456</div></td>
 						</tr>
 						<tr>
 						<td colspan="6" class="cont">
@@ -131,21 +139,27 @@
 						</tr>
 						<tr>
 						<th scope="row">이전글</th>
-						<td colspan="5">이전글이 없습니다.</td>
+						<td colspan="5"><div class="tbl-headcopy tbl-wid-740">이전글이 없습니다.</div></td>
 						</tr>
 						<tr class="next">
 						<th scope="row">다음글</th>
 						<td>공지사항</td>
-						<td colspan="4">성분별 지역별 빅데이터 추가</td>
+						<td colspan="4"><div class="tbl-headcopy tbl-wid-740">성분별 지역별 빅데이터 추가</div></td>
 						</tr>
 						</tbody>
 						</table><!-- //공지사항 상세 -->
 						<div class="wrap-btn">
 							<a href="#" class="btn-basic">목록으로</a>
+							<a href="#" class="btn-basic" role="button">수정하기</a>
+							<a href="#" class="btn-basic remove" role="button">삭제하기</a>
 						</div>
 					</div><!-- //공지사항 -->
 					<!-- FAQ// -->
 					<div class="container-tab">
+						<div class="control-admin chk_agr if-admin">
+							<input type="checkbox" id="c7" name="cc" /><label for="c7"><span></span>전체선택</label> <a href="#none" role="button" class="remove">선택삭제</a>
+							<a class="btn-str fr">FAQ 등록</a>	
+						</div>
 						<div class="wrap-sort">
 							<a href="#" class="on">전체</a>
 							<a href="#">분류1</a>
@@ -159,16 +173,18 @@
 						</colgroup>
 						<thead>
 						<tr>
-						<th scope="col">번호</th>
-						<th scope="col">분류</th>
-						<th scope="col">제목</th>
+						<th scope="col" class="tbl-admin tbl-wid-80">선택</th>
+						<th scope="col" class="tbl-wid-80">번호</th>
+						<th scope="col" class="tbl-wid-120">분류</th>
+						<th scope="col" class="tbl-wid-740">제목</th>
 						</tr>
 						</thead>
 						<tbody>
 						<tr class="question on">
+						<td scope="col" class="tbl-admin tbl-wid-80"><input type="checkbox" id="c10" name="cc" /><label for="c10"><span></span></label></td>
 						<td class="num">5189</td>
 						<td>분류1</td>
-						<td class="title">포털 홈페이지 오픈</td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-740">포털 홈페이지 오픈</div></td></td>
 						</tr>
 						<tr class="answer on">
 							<td colspan="6">안녕하세요. 티핑인사이트(TippingInsight)입니다.<br /><br />
@@ -176,9 +192,10 @@
 							</td>
 						</tr>
 						<tr class="question">
+						<td scope="col" class="tbl-admin tbl-wid-80"><input type="checkbox" id="c11" name="cc" /><label for="c11"><span></span></label></td>
 						<td class="num">5189</td>
 						<td>분류1</td>
-						<td class="title">포털 홈페이지 오픈</td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-740">포털 홈페이지 오픈</div></td>
 						</tr>
 						<tr class="answer">
 							<td colspan="6">안녕하세요. 티핑인사이트(TippingInsight)입니다.<br /><br />
