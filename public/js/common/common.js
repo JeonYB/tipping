@@ -51,6 +51,12 @@
         e.preventDefault();
         question.removeClass('on').eq(i).addClass('on'); 
         answer.removeClass('on').eq(i).addClass('on');
+        var inp = question.eq(i).find('.tbl-admin > input')
+        if(inp.is(":checked")){
+          inp.attr("checked", false);
+        }else{
+          inp.attr("checked", true);
+        }
       })
     })
   }
