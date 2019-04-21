@@ -50,4 +50,13 @@ module.exports = function(app)
       res.render('customer_write.html')
    });
 
+   /*  관리자 */
+   app.get('/admin',function(req,res){
+      res.render('admin.html')
+   });
+
+     /*  관리자_ 등록 */
+   app.get('/admin_write',function(req,res){
+      res.render('admin_write.html')
+   });
 }

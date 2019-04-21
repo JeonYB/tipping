@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tiping</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<link rel="stylesheet" type="text/css" href="/css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="/css/common/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<script src="/js/libs/jquery-3.3.1.min.js"></script>
+		<script src="/js/common/common.js"></script>
+		<script src="/js/libs/masonry.pkgd.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap" class="page-default">
+			<!-- header -->
+			<div id="header">
+				<h1><a href="#none" class="logo"><span class="blind">TippingInsight</span></a></h1>
+				<nav>
+					<ul class="gnb">
+						<li><a href="#none">TIPin</a></li>
+						<li class="on"><a href="#none">정보사항</a></li>
+						<li><a href="#none">고객센터</a></li>
+					</ul>
+				</nav>
+				<a class="gnb-other btn-account"><span>계정신청</span></a>
+			</div>
+			<!-- //header -->
+			<!-- container -->
+			<div id="container">
+				<div class="section-headline">
+					<h3 class="container-headline">정보사항</h3>
+				</div>
+				<div class="section-tab">
+					<div class="wrap-tab">	
+						<div class="tab on"><a href="">고객사 관리</a></div>
+						<div class="tab"><a href="">회원 관리</a></div>
+						<div class="tab"><a href="">정밀분석 관리</a></div>
+					</div>
+				</div>
+				<div class="content page-content login-admin">
+					<!-- 고객사 관리 // -->
+					<div class="container-tab on">
+						<div class="control-admin chk_agr if-admin">
+							<a class="btn-str fr">고객사 등록</a>	
+						</div>
+						<!-- 고객사 등록// -->
+						<table cellspacing="0" border="1" summary="" class="tbl-type">
+						<caption>고객사 등록</caption>
+						<col width="*"><col width="180"><col width="120"><col width="120"><col width="120"><col width="120">
+						<thead>
+						<tr>
+						<th scope="col">고객사명</th>	
+						<th scope="col">IP</th>
+						<th scope="col">계약 시작</th>
+						<th scope="col">계약 종료</th>
+						<th scope="col">ID개수</th>
+						<th scope="col">편집</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+						<td class="title"><div class="tbl-headcopy">동화제약</div></td>
+						<td>192.168.000.000 외 3개</td>
+						<td>2019.03.01</td>
+						<td>2019.03.01</td>
+						<td>9,999</td>
+						<td><a href="#none" class="btn-modify">수정하기</a></td>
+						</tr>
+						</tbody>
+						</table><!-- //공지사항 리스트 -->
+						<div class="paginate">
+							<a href="#" class="pre-end"><span class="blind">맨앞</span></a>
+							<a href="#" class="pre"><span class="blind">이전</span></a>
+							<a href="#">1</a>
+							<strong>12</strong>
+							<a href="#">13</a>
+							<a href="#">14</a>
+							<a href="#">15</a>
+							<a href="#">16</a>
+							<a href="#">17</a>
+							<a href="#">18</a>
+							<a href="#">19</a>
+							<a href="#">20</a>
+							<a href="#" class="next"><span class="blind">다음</span></a>
+							<a href="#" class="next-end"><span class="blind">맨뒤</span></a>
+						</div>
+					</div><!-- //공지사항 -->
+					<!-- FAQ// -->
+					<div class="container-tab">
+						<div class="control-admin chk_agr if-admin">
+							<select name="" id="ody" class="form-select cp-type">
+								<option>고객사 필터</option>
+								<option>옵션 하나</option>
+								<option>옵션 둘</option>
+							</select>	
+						</div>
+						<!-- 고객사 등록// -->
+						<table cellspacing="0" border="1" summary="" class="tbl-type">
+						<caption>고객사 등록</caption>
+						<col width="100"><col width="100"><col width="160"><col width="120"><col width="160"><col width="100"><col width="100"><col width="50"><col width="50">
+						<thead>
+						<tr>
+						<th scope="col">고객사명</th>
+						<th scope="col">아이디</th>
+						<th scope="col">이메일</th>
+						<th scope="col">부서</th>	
+						<th scope="col">IP</th>
+						<th scope="col">접속시간</th>
+						<th scope="col">로그아웃시간</th>
+						<th scope="col">동접여부</th>
+						<th scope="col">비활성</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+						<td class="title"><div class="tbl-headcopy">동화제약</div></td>
+						<td>account1</td>
+						<td>abcd@abcdefg.com</td>
+						<td>마케팅팀</td>
+						<td class="wrap-ip">
+							<p class="content-ip"><input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>전체선택</label></p>
+							<p class="content-ip"><input type="checkbox" id="c3" name="cc" /><label for="c3"><span></span>전체선택</label></p>
+						</td>
+						<td class="count">2019.00.00 <br />00:00:00</td>
+						<td class="count">2019.00.00 <br />00:00:00</td>
+						<td><input type="checkbox" id="c4" name="cc" /><label for="c4"><span></span></label></td>
+						<td><input type="checkbox" id="c5" name="cc" /><label for="c5"><span></span></label></td>
+						</tr>
+						</tbody>
+						</table><!-- //공지사항 리스트 -->
+						<div class="paginate">
+							<a href="#" class="pre-end"><span class="blind">맨앞</span></a>
+							<a href="#" class="pre"><span class="blind">이전</span></a>
+							<a href="#">1</a>
+							<strong>12</strong>
+							<a href="#">13</a>
+							<a href="#">14</a>
+							<a href="#">15</a>
+							<a href="#">16</a>
+							<a href="#">17</a>
+							<a href="#">18</a>
+							<a href="#">19</a>
+							<a href="#">20</a>
+							<a href="#" class="next"><span class="blind">다음</span></a>
+							<a href="#" class="next-end"><span class="blind">맨뒤</span></a>
+						</div>
+					</div><!-- //FAQ -->
+					<!-- 문의처 정보// -->
+					<div class="container-tab">
+						<!-- 고객사 등록// -->
+						<table cellspacing="0" border="1" summary="" class="tbl-type">
+						<caption>고객사 등록</caption>
+						<col width="160"><col width="240"><col width="*"><col width="50">
+						<thead>
+						<tr>
+						<th scope="col">고객사</th>
+						<th scope="col">분석명</th>
+						<th scope="col">URL</th>
+						<th scope="col">썸네일</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+						<td class="title"><div class="tbl-headcopy">동화제약</div></td>
+						<td>급여의약품 시도별 요양기관종별 통계</td>
+						<td class="count">http://spotfire.com/aaa/bbb</td>
+						<td><span class="img-thumb add"></span></td>
+						</tr>
+						<tr>
+						<td class="title"><div class="tbl-headcopy">동화제약</div></td>
+						<td>급여의약품 시도별 요양기관종별 통계</td>
+						<td class="count">http://spotfire.com/aaa/bbb</td>
+						<td><span class="img-thumb modify"><img src="/images/common/default.png"></span></td>
+						</tr>
+						</tbody>
+						</table><!-- //공지사항 리스트 -->
+						<div class="paginate">
+							<a href="#" class="pre-end"><span class="blind">맨앞</span></a>
+							<a href="#" class="pre"><span class="blind">이전</span></a>
+							<a href="#">1</a>
+							<strong>12</strong>
+							<a href="#">13</a>
+							<a href="#">14</a>
+							<a href="#">15</a>
+							<a href="#">16</a>
+							<a href="#">17</a>
+							<a href="#">18</a>
+							<a href="#">19</a>
+							<a href="#">20</a>
+							<a href="#" class="next"><span class="blind">다음</span></a>
+							<a href="#" class="next-end"><span class="blind">맨뒤</span></a>
+						</div>
+					</div><!-- //문의처 정보 -->
+				</div>
+			</div>
+			<!-- //container -->
+			<!-- footer -->
+			<div id="footer">
+				<div class="footer-content">
+					<h6 class="footer-logo"><p class="sub-copyright">@Tippinginsight</p></h6>
+					<ul class="footer-info">
+						<li><span class="text">Email : info@tippinginsight.co.kr</span></li>
+						<li><span class="text">Call : 02 - 6956 - 9008</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>		
+		<script>
+		$('.wrap-list').masonry({
+			itemSelector: '.items',
+			gutter: 20,
+		});
+		</script>
+	</body>
+</html>

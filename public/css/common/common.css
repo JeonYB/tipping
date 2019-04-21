@@ -32,6 +32,7 @@ html,body {height:100%;}
 #footer .footer-content .footer-info .text {font-size:13px; line-height: 140%;}
 .page-default #footer {margin-top:80px; background-color: #f8f8f8;}
 .page-default #footer::before {content:"";display:inline-block;position:absolute; left:0; top:0; width:100%; height:1px ; background-color: rgba(0, 0, 0, 0.07);} 
+.page-default .page-content .container-tab>.content-hedline,
 .page-default .page-content>.content-hedline {font-size: 18px;color: rgb(17, 21, 23);font-weight: 300;margin: 60px 0px 20px;}
 .form-text::placeholder {color:#111517;font-size:13px;border-collapse: collapse;}
 .form-text {padding:18px 20px;height: 56px;border: 1px solid #d9d9d9;}
@@ -65,13 +66,14 @@ input[type="file"]::placeholder {color:  rgba(17, 21, 23, 0.3); }
 .tbl-form table .row_disabled {background-color:#f7f7f7; font-weight: normal;}
 .tbl-form table td {}
 .tbl-form table th {font-weight: normal; text-align:left;}
-.tbl-form table .item {padding:18px 20px; text-align: left;}
+.tbl-form table .item {position: relative; padding:18px 20px; text-align: left;}
 .tbl-form table label {padding:18px 20px;}
 .tbl-form table .form-text {height:20px; padding:0; border:0; color: rgba(17, 21, 23, 0.3); line-height: 25px; }
 .tbl-form table .form-text:disabled {border:0; background: transparent; color:#111517;}
 .tbl-form table .form-text::placeholder {color: rgba(17, 21, 23, 0.3);}
 .tbl-form table .alt-text {display:none; font-size:13px;}
 .tbl-form table .alt-text.on {display:block;}
+.btn-modify {display: inline-block; width:120px; line-height: 30px; box-sizing: border-box; border:1px solid rgba(17, 21, 23, 0.1); text-align: center;}
 .alt-text {display: block; margin-top:8px; color:#ff3f00; font-size: 13px;}
 
 .section-agreement {margin-top:40px;}
@@ -179,9 +181,12 @@ input[type="file"]::placeholder {color:  rgba(17, 21, 23, 0.3); }
 .tbl-type .date {font-size:12px; color:rgba(17, 21, 23, 0.3);}
 .tbl-type .count {font-size:12px; color:rgba(17, 21, 23, 0.3);}
 .tbl-type .answer {display:none; background-color:#f7f7f7; font-size:14px; }
+.tbl-type .answer .btn-str {margin-top: 20px}
 .tbl-type .answer.on {display:table-row;}
 .tbl-type .answer td {padding: 40px; }
-
+.tbl-type .wrap-ip {padding: 12px 0;}
+.tbl-type .wrap-ip p {padding-bottom: 4px}
+.tbl-type .wrap-ip p:last-child {padding-bottom: 0px}
 .tbl-wid-60 {width:60px;}
 .tbl-wid-80 {width:80px;}
 .tbl-wid-120 {width:120px;}
@@ -237,11 +242,12 @@ input[type="file"]::placeholder {color:  rgba(17, 21, 23, 0.3); }
 .wrap-qna-copy .name {display:inline-block; width:100%; margin-top:12px; font-size:14px; font-weight: bold;}
 .wrap-qna-copy .info-name {margin-top:18px; font-size:12px; font-weight: normal;}
 .wrap-qna-copy .info-name li {margin-top:2px;}
-.wrap-qna-copy .legal {margin-top:60px; font-size:12px; font-weight: normal; color: rgba(17, 21, 23, 0.5);}
+.wrap-qna-copy .legal {margin-top:60px; font-size:12px; font-weight: normal; color: rgbaadd, 23, 0.5);}
 
 /*admin*/
 .login-admin .control-admin {display:block; }
 .control-admin {display:none; margin-bottom:40px; font-size: 14px; line-height:42px; }
+.control-admin::after {content: ""; display: block; width:100%; clear: both; }
 .control-admin .remove::before {content: ''; display: inline-block; width: 1px; height: 12px; margin:0 12px; background-color:rgba(17, 21, 23, 0.3); }
 .login-admin .select-news {display:block;}
 .login-admin .tbl-admin {display:table-cell; width:80px;}
@@ -253,7 +259,6 @@ input[type="file"]::placeholder {color:  rgba(17, 21, 23, 0.3); }
 .select-news {display:none; position: absolute; left:-10px; top:10px; z-index:1; }
 .select-news input {vertical-align: top}
 
-
 /**/
 .form-write input {width:100%;}
 .form-write table {border:0;}
@@ -261,4 +266,17 @@ input[type="file"]::placeholder {color:  rgba(17, 21, 23, 0.3); }
 .form-write table tr:first-child .item,.form-write table tr:first-child .headcopy {margin-bottom:0; border-bottom:0;}
 .form-write table .headcopy {display:inline-block; width:100%; height:56px; border:1px solid #e5e5e5; border-right: 0; margin-bottom:10px; }
 .form-write table .item {height:56px; border:1px solid #e5e5e5; border-left: 0; margin-bottom:10px; }
+
 .form-write table .item.form-area {height:auto; border:1px solid #e5e5e5;}
+
+.form-select.cp-type {width:140px; line-height:38px; padding:0 10px; border:1px solid rgba(17, 21, 23, 0.1); background-position: 115px 50%}
+.tbl-type .img-thumb {display:inline-block; width:48px; height:48px; position: relative; margin:4px 0; vertical-align:middle; box-sizing: border-box;border:1px solid rgba(17, 21, 23, 0.1);}
+.tbl-type .img-thumb img {width:48px; height:48px; }
+.tbl-type .img-thumb.add::after {content: ""; display: inline-block; position: absolute;top:50%; left:50%; width: 24px;height: 24px; margin-top:-12px; margin-left:-12px; background:url(/images/admin/icon_add.png) 50% 50% no-repeat; background-size: 24px;}
+.tbl-type .img-thumb.modify::after {content: ""; display: inline-block; position: absolute;top:50%; left:50%; width: 24px;height: 24px; margin-top:-12px; margin-left:-12px; background:url(/images/admin/icon_modify.png) 50% 50% no-repeat; background-size: 24px;}
+
+.item .btn-rt { position: absolute; right:20px; top:50%; margin-top:-14px;  } 
+.item .btn-ip {display:inline-block;width:72px;  line-height:28px; border:1px solid rgba(17, 21, 23, 0.3);text-align: center;} 
+.item .icon-calendar {display:inline-block; width:28px; height:28px; position: relative; margin:4px 0; vertical-align:middle; box-sizing: border-box;border:1px solid rgba(17, 21, 23, 0.3);}
+.item .icon-calendar::after {content: ""; display: inline-block; position: absolute;top:50%; left:50%; width: 24px;height: 24px; margin-top:-12px; margin-left:-12px; background:url(/images/admin/icon_calendar.png) 50% 50% no-repeat; background-size: 24px;}
+.bottom-etc {margin-top:20px; font-size: 13px;}

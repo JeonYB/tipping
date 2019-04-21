@@ -36,15 +36,98 @@
 				</div>
 				<div class="section-tab">
 					<div class="wrap-tab">	
-						<div class="tab"><a href="">사용방법</a></div>
-						<div class="tab on"><a href="">관련기사</a></div>
+						<div class="tab on"><a href="">사용방법</a></div>
+						<div class="tab "><a href="">관련기사</a></div>
 					</div>
 				</div>
 				<div class="content page-content login-admin"><!-- login-admin ADD시 관리자 로그인 화면 추가 -->
-					<div class="container-tab">
-						아직 내용을 전달 받지 못했음
-					</div>
 					<div class="container-tab on">
+						
+						<div class="control-admin chk_agr if-admin">
+							<input type="checkbox" id="c4" name="cc" /><label for="c4"><span></span>전체선택</label> <a href="#none" role="button" class="remove">선택삭제</a>
+							<a class="btn-str fr">사용방법 등록</a>	
+						</div>
+						<div class="wrap-sort">
+							<a href="#" class="on">전체</a>
+							<a href="#">분류1</a>
+							<a href="#">분류2</a>
+							<a href="#">분류3</a>
+						</div>
+						<!-- 정보사항 리스트// -->
+						<table cellspacing="0" border="1" summary="" class="tbl-type">
+						<caption>정보사항</caption>
+						<thead>
+						<tr>
+						<th scope="col">분류</th>
+						<th scope="col">제목</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>						
+						<td class="tbl-wid-120">계정/내정보</td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-580">계정신청 방법</div></td>
+						</tr>
+						<tr>
+						<td>정보사항</td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-580">포털 홈페이지 오픈</div></td>
+						</tr>
+						<tr>
+						<td>정보사항</td>
+						<td class="title"><div class="tbl-headcopy tbl-wid-580">포털 홈페이지 오픈</div></td>
+						</tr>
+						</tbody>
+						</table><!-- //정보사항 리스트 -->
+						<div class="paginate">
+							<a href="#" class="pre-end"><span class="blind">맨앞</span></a>
+							<a href="#" class="pre"><span class="blind">이전</span></a>
+							<a href="#">1</a>
+							<strong>12</strong>
+							<a href="#">13</a>
+							<a href="#">14</a>
+							<a href="#">15</a>
+							<a href="#">16</a>
+							<a href="#">17</a>
+							<a href="#">18</a>
+							<a href="#">19</a>
+							<a href="#">20</a>
+							<a href="#" class="next"><span class="blind">다음</span></a>
+							<a href="#" class="next-end"><span class="blind">맨뒤</span></a>
+						</div>
+
+						<table cellspacing="0" border="1" summary="글 내용을 표시" class="tbl-type tbl-view">
+						<caption>정보사항 상세</caption>
+						<colgroup>
+						<col width="80"><col width="*">
+						</colgroup>
+						<thead>
+						<tr>
+						<th scope="row">제목</th>
+						<td class="tit">포털 홈페이지 오픈</div></td>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+						<th scope="row">분류</th>
+						<td> 정보사항</td>
+						</tr>
+						<tr>
+						<td colspan="2" class="cont">
+							안녕하세요. 티핑인사이트(TippingInsight)입니다.<br /><br />
+							저희 티핑인사이트 포털 홈페이지를 정식으로 오픈 했습니다.<br /><br />
+							많은 관심과 부탁 드립니다.<br /><br />
+							감사합니다.
+						</td>
+						</tr>
+						</tbody>
+						</table><!-- //정보사항 상세 -->
+						<div class="wrap-btn">
+							<a href="#" class="btn-basic">목록으로</a>
+							<a href="#" class="btn-basic" role="button">수정하기</a>
+							<a href="#" class="btn-basic remove" role="button">삭제하기</a>
+						</div>
+
+					</div>
+					<div class="container-tab">
 						<div class="control-admin chk_agr if-admin">
 							<input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>전체선택</label> <a href="#none" role="button" class="remove">선택삭제</a>
 							<a class="btn-str fr">관련기사 등록</a>	
@@ -109,9 +192,59 @@
 									</div>
 								</div>								
 							</div>
+							<script>
+							$('.wrap-list').masonry({
+								itemSelector: '.items',
+								gutter: 20,
+							});
+							</script>
 							<div class="wrap-spin">
 								<div class="spin"></div>
 							</div>
+
+							<table cellspacing="0" border="1" summary="글 내용을 표시" class="tbl-type tbl-view">
+								<caption>공지사항 상세</caption>
+								<colgroup>
+								<col width="80"><col width="120"><col width="220">
+								<col width="80"><col width="120"><col width="220">
+								</colgroup>
+								<thead>
+								<tr>
+								<th scope="row">제목</th>
+								<td colspan="5" class="tit"><div class="tbl-headcopy tbl-wid-860"><strong class="import">공지</strong>포털 홈페이지 오픈</div></td>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+								<th scope="row">분류</th>
+								<td colspan="2">공지사항</td>
+								<th scope="row">일시</th>
+								<td colspan="2">2019. 03. 24<div class="ib-admin count"><strong>조회수</strong>1,456</div></td>
+								</tr>
+								<tr>
+								<td colspan="6" class="cont">
+									안녕하세요. 티핑인사이트(TippingInsight)입니다.<br /><br />
+									저희 티핑인사이트 포털 홈페이지를 정식으로 오픈 했습니다.<br /><br />
+									많은 관심과 부탁 드립니다.<br /><br />
+									감사합니다.
+								</td>
+								</tr>
+								<tr>
+								<th scope="row">이전글</th>
+								<td colspan="5"><div class="tbl-headcopy tbl-wid-740">이전글이 없습니다.</div></td>
+								</tr>
+								<tr class="next">
+								<th scope="row">다음글</th>
+								<td>공지사항</td>
+								<td colspan="4"><div class="tbl-headcopy tbl-wid-740">성분별 지역별 빅데이터 추가</div></td>
+								</tr>
+								</tbody>
+								</table><!-- //공지사항 상세 -->
+								<div class="wrap-btn">
+									<a href="#" class="btn-basic">목록으로</a>
+									<a href="#" class="btn-basic" role="button">수정하기</a>
+									<a href="#" class="btn-basic remove" role="button">삭제하기</a>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -129,11 +262,5 @@
 			</div>
 			<!-- //footer -->
 		</div>		
-		<script>
-		$('.wrap-list').masonry({
-			itemSelector: '.items',
-			gutter: 20,
-		});
-		</script>
 	</body>
 </html>

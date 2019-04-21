@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tiping</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<link rel="stylesheet" type="text/css" href="/css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="/css/common/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<script src="/js/libs/jquery-3.3.1.min.js"></script>
+		<script src="/js/common/common.js"></script>
+		<script src="/js/libs/masonry.pkgd.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap" class="page-default">
+			<!-- header -->
+			<div id="header">
+				<h1><a href="#none" class="logo"><span class="blind">TippingInsight</span></a></h1>
+				<nav>
+					<ul class="gnb">
+						<li><a href="#none">TIPin</a></li>
+						<li class="on"><a href="#none">정보사항</a></li>
+						<li><a href="#none">고객센터</a></li>
+					</ul>
+				</nav>
+				<a class="gnb-other btn-account"><span>계정신청</span></a>
+			</div>
+			<!-- //header -->
+			<!-- container -->
+			<div id="container">
+				<div class="section-headline">
+					<h3 class="container-headline">정보사항</h3>
+				</div>
+				<div class="section-tab">
+					<div class="wrap-tab">	
+						<div class="tab on"><a href="">고객사 관리</a></div>
+						<div class="tab"><a href="">회원 관리</a></div>
+						<div class="tab"><a href="">정밀분석 관리</a></div>
+					</div>
+				</div>
+				<div class="content page-content login-admin">
+					<!-- 고객사 관리 // -->
+					<div class="container-tab on">
+						<h4 class="content-hedline">고객사 등록</h4>
+					<!-- tbl-form//  -->
+					<div class="tbl-form">
+						<form action="" method="post">
+						<fieldset>
+							<legend>Legend</legend>
+							<table cellspacing="0" summary=" 표의 요약을 반드시 넣어 주세요">
+							<col width="220">
+							<col width="*">
+							<tbody>
+							<tr class="row_disabled">
+								<th scope="row">
+									<label for="">고객사</label>
+								</th>
+								<th>
+									<div class="item">
+										<input type="text" value ="티핑제약" class="form-text" disabled>
+									</div>
+								</th>
+							</tr>
+							<tr class="row_disabled">
+								<th scope="row">
+									<label for="">권한</label>
+								</th>
+								<th>
+									<div class="item">
+										<input type="text" value ="권한" class="form-text" disabled>
+									</div>
+								</th>
+							</tr>
+							<tr>
+								<th scope="row"><label for="uid">IP</label></th>
+								<td>
+									<div class="item">
+										<input name="" type="text" value="" id="uid" class="form-text" placeholder="IP주소를 입력하세요.">
+										<span class="btn-rt"><a href="#none" class="btn-ip">IP 추가</a></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="upw">계약 시작 일자</label></th>
+								<td>
+									<div class="item">
+										<input name="" type="text" value="" id="upw" class="form-text" placeholder="날짜를 선택해주세요.">
+										<span class="btn-rt"><a href="#none" class="icon-calendar"><span class="blind">달력보기</span></a></span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="upwc">계약 종료 일자</label></th>
+								<td>
+									<div class="item">
+										<input name="" type="text" value="" id="upwc" class="form-text" placeholder="날짜를 선택해주세요.">
+										<span class="btn-rt"><a href="#none" class="icon-calendar"><span class="blind">달력보기</span></a></span>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+							</table>
+							<div class="bottom-etc"><input type="checkbox" id="c2" name="cc" /><label for="c2"><span></span>동시접속 가능</label></div>
+						</fieldset>
+						</form>
+
+						<div class="section-button">
+							<a href="#none" class="btn-account btn-cencle"><span>취소</span></a>
+							<button name="" type="submit" class="btn-account btn-main"><span>등록</span></button>
+						</div>
+					</div><!-- tbl-form//  -->
+					</div><!-- //공지사항 -->
+					<!-- FAQ// -->
+					<div class="container-tab">
+						
+					</div><!-- //FAQ -->
+					<!-- 문의처 정보// -->
+					<div class="container-tab">
+						<!-- 고객사 등록// -->
+					</div><!-- //문의처 정보 -->
+				</div>
+			</div>
+			<!-- //container -->
+			<!-- footer -->
+			<div id="footer">
+				<div class="footer-content">
+					<h6 class="footer-logo"><p class="sub-copyright">@Tippinginsight</p></h6>
+					<ul class="footer-info">
+						<li><span class="text">Email : info@tippinginsight.co.kr</span></li>
+						<li><span class="text">Call : 02 - 6956 - 9008</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>		
+		<script>
+		$('.wrap-list').masonry({
+			itemSelector: '.items',
+			gutter: 20,
+		});
+		</script>
+	</body>
+</html>
