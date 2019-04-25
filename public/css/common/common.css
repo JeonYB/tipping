@@ -105,11 +105,23 @@ input[type="file"]::placeholder {color:  rgba(17, 21, 23, 0.3); }
 .nav {position:absolute; left:0; top:0; width:220px; }
 .nav .content-headline {margin:0; padding:60px 0 10px; border-bottom: 2px solid #000; line-height:30px; }
 .nav .sub-headline {margin-top:20px; font-size:14px; font-weight: bold; line-height: 24px; }
-.nav .wrap-menu {margin-top:8px;}
-.nav .wrap-menu .menu {position:relative; margin-top:10px; padding-left:35px; font-size:12px;  line-height: 24px; }
-.nav .wrap-menu .menu a::before {content:""; display:inline-block; position: absolute;left:0; top:0; width:24px; height:24px; background:url(/images/common/icon_folder_off.png) left top no-repeat;}
-.nav .wrap-menu .menu.on {color:#ff3f00; font-weight: bold;}
-.nav .wrap-menu .menu.on a::before {background-image:url(/images/common/icon_folder_on.png)}
+.nav .wrap-menu>{margin-top:8px;}
+.nav .wrap-menu>.menu {position:relative; margin-top:10px; padding-left:35px; font-size:12px;  line-height: 24px; }
+.nav .wrap-menu>.menu>a::before {content:""; display:inline-block; position: absolute;left:-6px; top:0; width:36px; height:24px; background:url(/images/common/icon_folder_off.png) left top no-repeat;}
+.nav .wrap-menu>.menu.on>a {color:#ff3f00; font-weight: bold;}
+.nav .wrap-menu>.menu.on>a::before {background-image:url(/images/common/icon_folder_on.png)}
+.nav .wrap-menu>.menu.child>a::before {background-image:url(/images/common/icon_folder_child_off.png)}
+.nav .wrap-menu>.menu.on.child>a::before {background-image:url(/images/common/icon_folder_child_on.png)}
+
+.nav .wrap-sub-menu {margin-top:8px;}
+.nav .wrap-sub-menu .menu {position:relative; margin-top:10px; padding-left:15px; font-size:12px;  line-height: 24px; }
+.nav .wrap-sub-menu .menu>a::before {content:""; display:inline-block; position: absolute;left:-26px; top:0; width:36px; height:24px; background:url(/images/common/icon_folder_off.png) left top no-repeat;}
+.nav .wrap-sub-menu .menu.on>a{color:#ff3f00; font-weight: bold;}
+.nav .wrap-sub-menu .menu.on>a::before {background-image:url(/images/common/icon_folder_on.png)}
+.nav .wrap-sub-menu .menu.child>a::before {background-image:url(/images/common/icon_folder_child_off.png)}
+.nav .wrap-sub-menu .menu.on.child>a::before {background-image:url(/images/common/icon_folder_child_on.png)}
+
+
 
 .article .wrap-scrum  {margin:0; padding:60px 0 10px; border-bottom: 2px solid #000; line-height:30px; }
 .article {min-height:400px; margin-left:240px; width:700px;}
